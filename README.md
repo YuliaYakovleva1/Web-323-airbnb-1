@@ -22,4 +22,3 @@ Browse to [localhost:1234](http://localhost:1234)
 ## Parcel
 
 This starter uses parcel (v2) to bundle your scripts. Refer to official [parcel documentation](https://parceljs.org/) for more info.
-
