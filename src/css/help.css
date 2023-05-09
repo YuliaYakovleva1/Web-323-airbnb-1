@@ -47,37 +47,66 @@
   box-shadow: inset 0 0 0 2px #222222;
 }
 
-.img-search-dropdown {
-  width: 36px;
-  border: 10px solid #dddddd; 
-  border-radius: 20%;
-  
-}
 
-/*
-TODO: add box-shadow for input focus
+/* TODO: add box-shadow for input focus
 input[type='search']:focus .help-search {
   box-shadow: inset 0 0 0 2px #222222;
-}
-*/
+} */
+
+/* выпадающее меню поиска */
 
 .popup {
   display: none;
   background: #ffffff;
-  padding: 12px;
-  border-radius: 8px;
+  padding: 32px 0 12px 0;
+  border-radius: 35px;
   position: absolute;
-  width: 100%;
+  width: 400px;
   top: 55px;
-  left: 0;
+  left: 50%;
+  margin-left: -200px;
   box-shadow: 0 8px 28px rgba(0,0,0,0.28);
+  color: #585850;
+  z-index: 1 ;
+}
+
+.search-dropdown-title {
+  font-size: 16px;
+  color: #222222;
+  font-weight: 600;
+  padding: 0 0 12px 32px;
+}
+
+.search-link {
+  color: #585850;
+  display: flex;
+  align-items: center;
+  padding: 10px 0 10px 22px;
+  font-size: 16px;
+  max-width: 100%;
+}
+
+.search-link:before {
+  content: "";
+  background-image: url(../images/help/search-menu-icon.png);
+  height: 50px;
+  width: 50px;
+  border-radius: 15%;
+  margin-right: 15px;
+  background-size: cover;
+}
+
+.search-link:hover {
+  background-color: #f7f7f7;
+}
+
+.last-link:hover {
+  border-radius: 0 0 19px 19px;
 }
 
 .popup-show {
   display: block;
 }
-
-
 
 /* табы на странице help */
 .tabs-list {
